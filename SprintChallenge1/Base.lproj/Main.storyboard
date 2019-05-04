@@ -13,13 +13,13 @@
         <!--Movie List-->
         <scene sceneID="6td-bQ-WiT">
             <objects>
-                <tableViewController id="bVo-4s-F0b" sceneMemberID="viewController">
+                <tableViewController id="bVo-4s-F0b" customClass="MovieListTableViewController" customModule="SprintChallenge1" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="JR2-cY-4rc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="81" id="KZz-Lm-Hi5">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MovieCell" rowHeight="81" id="KZz-Lm-Hi5">
                                 <rect key="frame" x="0.0" y="28" width="414" height="81"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="KZz-Lm-Hi5" id="AxC-2F-HyQ">
@@ -67,10 +67,10 @@
             </objects>
             <point key="canvasLocation" x="955.07246376811599" y="84.375"/>
         </scene>
-        <!--View Controller-->
+        <!--Movie View Controller-->
         <scene sceneID="c99-Hh-5L3">
             <objects>
-                <viewController id="Dqk-To-Qmh" sceneMemberID="viewController">
+                <viewController id="Dqk-To-Qmh" customClass="MovieViewController" customModule="SprintChallenge1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Rcl-qa-fsz">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -90,6 +90,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="09J-BM-ilp">
                                 <rect key="frame" x="170.5" y="187.5" width="73" height="30"/>
                                 <state key="normal" title="Add Movie"/>
+                                <connections>
+                                    <action selector="addMovieButtonTapped:" destination="Dqk-To-Qmh" eventType="touchUpInside" id="LRh-Ex-Lt5"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -106,6 +109,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="crX-KO-Kda"/>
                     </view>
+                    <connections>
+                        <outlet property="movieTextField" destination="NZ1-hU-eea" id="45c-ZD-yu5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aQe-QZ-kPI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
