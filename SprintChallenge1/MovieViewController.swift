@@ -21,8 +21,13 @@ class MovieViewController: UIViewController, MovieControllerProtocol {
     
     @IBAction func addMovieButtonTapped(_ sender: Any) {
         
-        guard let movie = movieTextField.text else {return}
+        guard let movie = movieTextField.text,
+            let text = movieTextField.text else {return}
+        
+        movieController?.createMovie(name: movie)
+    
     }
+    
     
     /*
     // MARK: - Navigation
