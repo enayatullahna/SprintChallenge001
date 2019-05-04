@@ -8,6 +8,8 @@
 
 import UIKit
 
+var list = ["Buy milk", "Run 5 miles", "Get Peter", "Plant my new plants"]
+
 class MovieListTableViewController: UITableViewController, MovieControllerProtocol {
     var movieController: MovieController?
     
@@ -18,6 +20,7 @@ class MovieListTableViewController: UITableViewController, MovieControllerProtoc
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         tableView.reloadData()
     }
 

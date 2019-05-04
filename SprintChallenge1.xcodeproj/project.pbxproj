@@ -16,6 +16,7 @@
 		E6B43CB3227D26BF00AA1994 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B43CB2227D26BF00AA1994 /* Movie.swift */; };
 		E6B43CB5227D279100AA1994 /* MovieController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B43CB4227D279100AA1994 /* MovieController.swift */; };
 		E6B43CB7227D29C300AA1994 /* MovieControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B43CB6227D29C300AA1994 /* MovieControllerProtocol.swift */; };
+		E6B43CDB227D43E900AA1994 /* MoviesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B43CDA227D43E900AA1994 /* MoviesTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		E6B43CB2227D26BF00AA1994 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		E6B43CB4227D279100AA1994 /* MovieController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieController.swift; sourceTree = "<group>"; };
 		E6B43CB6227D29C300AA1994 /* MovieControllerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieControllerProtocol.swift; sourceTree = "<group>"; };
+		E6B43CDA227D43E900AA1994 /* MoviesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 				E6B43CB2227D26BF00AA1994 /* Movie.swift */,
 				E6B43CB4227D279100AA1994 /* MovieController.swift */,
 				E6B43CB6227D29C300AA1994 /* MovieControllerProtocol.swift */,
+				E6B43CDA227D43E900AA1994 /* MoviesTableViewCell.swift */,
 			);
 			path = SprintChallenge1;
 			sourceTree = "<group>";
@@ -152,6 +155,7 @@
 				E6B43C9D227D1EC700AA1994 /* AppDelegate.swift in Sources */,
 				E6B43CB3227D26BF00AA1994 /* Movie.swift in Sources */,
 				E6B43CB7227D29C300AA1994 /* MovieControllerProtocol.swift in Sources */,
+				E6B43CDB227D43E900AA1994 /* MoviesTableViewCell.swift in Sources */,
 				E6B43CB1227D25AC00AA1994 /* MovieViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

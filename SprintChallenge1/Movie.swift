@@ -10,9 +10,11 @@ import Foundation
 
 class Movie {
     var name: String
+    var notSeen: Bool
     
-    init (name: String) {
+    init (name: String, notSeen: Bool = false) {
         self.name = name
+        self.notSeen = notSeen
     }
     
 }

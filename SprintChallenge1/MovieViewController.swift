@@ -25,6 +25,12 @@ class MovieViewController: UIViewController, MovieControllerProtocol {
             let text = movieTextField.text else {return}
         
         movieController?.createMovie(name: movie)
+        movieController?.createMovie(name: text)
+        if (movieTextField.text != "")
+        {
+            list.append(movieTextField.text!)
+            movieTextField.text = ""
+        }
     
     }
     

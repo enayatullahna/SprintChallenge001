@@ -14,7 +14,7 @@ class MovieController {
     var movies: [Movie] = []
     
     func createMovie (name: String){
-        let movie = Movie(name: name)
+        let movie = Movie(name: name, notSeen: false)
         
         movies.append(movie)
     }
